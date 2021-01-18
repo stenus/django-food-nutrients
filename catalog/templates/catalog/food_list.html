@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Список продуктов</h1>
+{% include "catalog/pagination.html" %}
+{% if food_list %}
+<ul class='list-group'>
+    {% for food in food_list %}
+    <li class='list-group-item'>
+        <a href="{{ food.get_absolute_url }}">{{food.russian_name}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% include "catalog/pagination.html" %}
+{% else %}
+<p>Ошибка базы данных!</p>
+{% endif %}
+{% endblock %}
+
+{% block footer %}
+<hr />
+    <footer class="mb-2">
+        <div class="container">
+            <span class="text-muted small">2021 <a href="{% url 'about' %}">О сайте</a>
+                <p><a href="https://github.com/stenus">Моя страница на GitHub</a></p>
+            </span>
+        </div>
+    </footer>
+{% endblock %}

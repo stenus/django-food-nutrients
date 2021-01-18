@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ food.russian_name }} <br> <small>({{ food.english_name }})</small></h1>
+    <h2>Состав продукта</h2>
+    <div class="table-responsive">    
+    <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Название</th>
+                    <th scope="col">Кол-во</th>
+                    <th scope="col">Единица измерения</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for field in food.important_nutrients %}
+                <tr>
+                    <td> {{ field.name }} </td>
+                    <td> {{ field.amount }} </td>
+                    <td> {{ field.unit }} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

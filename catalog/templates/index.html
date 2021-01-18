@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>Главная</title>{% endblock %}
+
+{% block additional_styles %}
+{% include "catalog/background-image.html" %}
+{% endblock %}
+
+{% block content %}
+<div class='bg-dark text-white text-center p-3 rounded col-8 mx-auto'>
+    <p><strong>Добро пожаловать!</strong></p>
+    <p>Здесь вы найдете информацию о содержании питательных веществ в еде.
+        Для продолжения перейдите в <a href="{% url 'catalog' %}">Справочник</a>.
+        Всего в справочнике содержиться информация о {{ num_foods }} продуктах питания.
+</div>
+{% endblock %}

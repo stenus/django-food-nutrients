@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block title %}<title>О сайте</title>{% endblock %}
+
+{% block additional_styles %}
+{% include "catalog/background-image.html" %}
+{% endblock %}
+
+{% block content %}
+<div class='bg-dark text-white text-center p-3 rounded col-8 mx-auto'>
+    <p>Источником данных о продуктах питания является Food and Nutrient Database for Dietary Studies 2017-2018
+    <a href="https://fdc.nal.usda.gov">сайта Министерства сельского хозяйства США</a>.
+    <p><a href="https://github.com/stenus">Моя страница на GitHub</a></p>
+</div>
+{% endblock %}
