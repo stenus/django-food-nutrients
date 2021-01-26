@@ -10,3 +10,5 @@ db = {
     'host': '',
     'port': '',
 }
+
+Статическую версию сайта можно посмотреть на [Vercel](nutrients.vercel.app).
