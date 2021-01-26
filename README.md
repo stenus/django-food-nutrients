@@ -11,4 +11,4 @@ db = {
     'port': '',
 }
 
-Статическую версию сайта можно посмотреть на [Vercel](nutrients.vercel.app).
+Статическую версию сайта можно посмотреть на [Vercel](https://nutrients.vercel.app).
