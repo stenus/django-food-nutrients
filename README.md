@@ -2,13 +2,6 @@
 
 Для извлечения данных из csv-файлов и загрузки в базу данных создан Jupyter notebook в папке csv_data_processing
 
-Информация о конфигурации базы данных PostgresSQL должна быть помещена в файл private_config.py в папке food в следующем формате (заполните поля соответствующими значениями для вашей базы данных):
-db = {
-    'name': '',
-    'username': '',
-    'password': '',
-    'host': '',
-    'port': '',
-}
+Перед деплоем сайта нужно завершить подготовку по [списку](https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/). Информацию о базе данных PostgresSQL и секретный ключ должны быть помещена в файл private_config_sample.py в папке food, после чего он должен быть переименован в private_config.py
 
 Статическую версию сайта можно посмотреть на [Vercel](https://nutrients.vercel.app).
